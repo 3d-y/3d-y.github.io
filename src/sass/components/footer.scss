@@ -1,0 +1,106 @@
+// *{
+//     outline: 1px solid teal;
+// }
+
+.footer{
+    padding-top: 44px;
+    background-color: $black-decore-color;
+}
+
+.logo{
+    padding-bottom: 20px;
+}
+
+.contacts-list,
+.socials-list,
+.confidence-list{
+    @extend %item;
+    @extend %list;
+}
+
+.address,
+.contacts-list{
+    @include font-settings(14px, 25px);
+    font-family: "Ubuntu";
+    font-weight: 700;
+    font-style: normal;
+    color: $footer-text-color;
+}
+
+.address{
+    margin-bottom: 30px;
+}
+
+.contacts-list{
+    margin-bottom: 36px;
+}
+
+.request-btn{
+    @extend %btn;
+    width: 192px;
+    height: 42px;
+    text-align: center;
+    background-color: $main-decore-color;
+    border-radius: 6px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    color: #f6f9fa;
+    margin-bottom: 34px;
+    cursor: pointer;
+
+    // &:hover{
+    //     background-color: $main-decore-color-hover;
+    // }
+}
+
+
+.socials-list {
+    display: flex;
+    justify-content: space-between;
+    width: 146px;
+    margin-bottom: 32px;
+
+    &__item {
+
+        & a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+        }
+
+        &--telegram {
+            background-color: #6398e0;
+        }
+
+        &--facebook{
+            background-color: #3b4e70;
+        }
+
+        &--youtube{
+            background-color: #9f2431;
+        }
+
+        & svg{
+            fill: #fff;
+        }
+
+    }
+}
+
+.confidence-list{
+    background-color: #151515;
+    padding-top: 24px;
+    padding-bottom: 26px;
+    color: #626263;
+
+    &__item{
+        @include font-settings(12px, 25px);
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 700;
+    }
+}
