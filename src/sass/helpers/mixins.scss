@@ -11,3 +11,8 @@
 @mixin auto-line-height($font-size) {
   line-height: $font-size * 1.2;
 }
+
+@mixin background-opacity($color, $opacity) {
+  background-color: $color; /* The Fallback */
+  background-color: rgba($color, $opacity);
+}

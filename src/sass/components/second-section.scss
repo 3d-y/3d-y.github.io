@@ -1,5 +1,79 @@
 .teaching-info__title {
+  margin-bottom: 6px;
+
   &::before {
-    background-image: url(../images/title-icons/second-title.png);
+    background-image: url(../images/common/aim.png);
   }
+}
+
+.teaching-info__list {
+  @extend %list;
+  @extend %item;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.teaching-info__item {
+  flex: 0 0 190px;
+  padding-top: 94px;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 50px;
+  }
+
+  &::before {
+    display: block;
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: 27px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:first-child::before {
+    @include background-opacity($main-decore-color, 0.2);
+    background-image: url(../images/how_we_teach/globe.png);
+  }
+
+  &:nth-child(2)::before {
+    @include background-opacity($section-bg-orange-color, 0.2);
+    background-image: url(../images/how_we_teach/hands.png);
+  }
+
+  &:nth-child(3)::before {
+    @include background-opacity($section-bg-decore-color, 0.2);
+    background-image: url(../images/how_we_teach/peace.png);
+  }
+
+  &:nth-child(4)::before {
+    @include background-opacity($section-bg-aquamarine-color, 0.2);
+    background-image: url(../images/how_we_teach/coins.png);
+  }
+
+  &:nth-last-child(3)::before {
+    @include background-opacity($section-bg-decore-color, 0.2);
+    background-image: url(../images/how_we_teach/lamp.png);
+  }
+
+  &:nth-last-child(2)::before {
+    @include background-opacity($section-bg-orange-color, 0.2);
+    background-image: url(../images/how_we_teach/folder.png);
+  }
+
+  &:last-child::before {
+    @include background-opacity($main-decore-color, 0.2);
+    background-image: url(../../images/how_we_teach/arrow-aim.png);
+  }
+}
+
+.teaching-info__item-descr {
+  @extend %prg;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  line-height: 20px;
 }
