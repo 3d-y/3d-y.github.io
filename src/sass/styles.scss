@@ -1,0 +1,12 @@
+/*
+   Import partials below
+*/
+@import "./helpers/variables.scss";
+@import "./helpers/placeholders.scss";
+@import "./helpers/mixins.scss";
+@import "./normalize";
+@import "./fonts.scss";
+@import "./base.scss";
+
+/*components*/
+@import "./components/container.scss";
