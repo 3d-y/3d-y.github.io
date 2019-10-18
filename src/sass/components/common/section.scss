@@ -1,0 +1,25 @@
+.section__title {
+  @extend %prg;
+  @include auto-line-height($title-font-size-mobile);
+  text-transform: uppercase;
+  font-size: $title-font-size-mobile;
+  color: $black-decore-color;
+  font-family: $caption-font-stack;
+  position: relative;
+  padding-left: 40px;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: '';
+    border-radius: 50%;
+    background-color: rgb(252, 174, 38);
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -3px;
+    left: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

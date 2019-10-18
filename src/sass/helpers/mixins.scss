@@ -7,3 +7,7 @@
   display: $display;
   content: $content;
 }
+
+@mixin auto-line-height($font-size) {
+  line-height: $font-size * 1.2;
+}
