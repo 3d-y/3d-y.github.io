@@ -1,12 +1,13 @@
 .section__title {
   @extend %prg;
   @include auto-line-height($title-font-size-mobile);
+  @include letter-spacing(20);
   text-transform: uppercase;
   font-size: $title-font-size-mobile;
   color: $black-decore-color;
   font-family: $caption-font-stack;
   position: relative;
-  padding-left: 40px;
+  padding-left: 38px;
 
   &::before {
     position: absolute;

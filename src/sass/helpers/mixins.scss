@@ -16,3 +16,7 @@
   background-color: $color; /* The Fallback */
   background-color: rgba($color, $opacity);
 }
+
+@mixin letter-spacing($interval) {
+  letter-spacing: ($interval / 1000)+em;
+}

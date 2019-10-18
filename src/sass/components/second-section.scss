@@ -1,3 +1,7 @@
+.teaching-info {
+  padding-top: 55px;
+}
+
 .teaching-info__title {
   margin-bottom: 6px;
 
@@ -73,7 +77,7 @@
 
 .teaching-info__item-descr {
   @extend %prg;
+  @include letter-spacing(50);
   font-size: 14px;
-  letter-spacing: 0.05em;
   line-height: 20px;
 }
