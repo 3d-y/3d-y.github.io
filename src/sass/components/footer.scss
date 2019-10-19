@@ -5,15 +5,21 @@
 .footer{
     padding-top: 44px;
     background-color: $black-decore-color;
-}
 
-.logo{
-    padding-bottom: 20px;
+    &__logo{
+        padding-bottom: 20px;
+        
+        @include for-tablet-portrait-up{
+            min-width: 600px;
+            text-align: left;
+            padding-bottom: 30px;
+        }
+    }
 }
 
 .contacts-list,
 .socials-list,
-.confidence-list{
+.confidence__list{
     @extend %item;
     @extend %list;
 }
@@ -29,10 +35,18 @@
 
 .address{
     margin-bottom: 30px;
+
+    @include for-tablet-portrait-up{
+        margin-bottom: 0;
+    }    
 }
 
 .contacts-list{
     margin-bottom: 36px;
+    
+    @include for-tablet-portrait-up{
+        margin-bottom: 0;
+    }  
 }
 
 .request-btn{
@@ -49,9 +63,20 @@
     margin-bottom: 34px;
     cursor: pointer;
 
-    // &:hover{
-    //     background-color: $main-decore-color-hover;
-    // }
+    @include for-tablet-portrait-up{
+        margin-bottom: 22px;
+    }  
+
+    @include for-desktop-up{
+        margin-bottom: 0;
+    }
+
+    &:hover,
+    &:active{
+        @include for-tablet-portrait-up{
+            background-color: $main-decore-color-hover;
+        }
+    }
 }
 
 
@@ -87,20 +112,83 @@
         & svg{
             fill: #fff;
         }
+    }
 
+    @include for-tablet-portrait-up{
+        margin-bottom: 0;
     }
 }
 
-.confidence-list{
+.confidence{
     background-color: #151515;
-    padding-top: 24px;
-    padding-bottom: 26px;
+
+    &__list{
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: #626263;
 
-    &__item{
-        @include font-settings(12px, 25px);
-        font-family: "Open Sans";
-        font-style: normal;
-        font-weight: 700;
+        &__item{
+            @include font-settings(12px, 25px);
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 700;
+        }
+    }
+}
+
+// ADAPTATION FOR TABLET
+
+.footer__info{
+    @include for-tablet-portrait-up{
+        min-width: 600px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 36px;
+    }
+
+    &__actions{
+        @include for-tablet-portrait-up{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+.confidence__list{
+    @include for-tablet-portrait-up{
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__item:not(:last-child){
+        @include for-tablet-portrait-up{
+            margin-right: 40px;
+        }
+    }
+}
+
+// ADAPTATION FOR DESKTOP
+
+.footer__info{
+    @include for-desktop-up{
+        min-width: 1140px;
+        padding-bottom: 60px;
+    }
+
+    &__actions{
+        @include for-desktop-up{
+            min-width: 520px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+}
+
+.confidence__list__item:not(:last-child){
+    @include for-desktop-up{
+        margin-right: 76px;
     }
 }
