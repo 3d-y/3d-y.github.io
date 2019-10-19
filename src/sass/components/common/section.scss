@@ -1,13 +1,11 @@
 .section__title {
   @extend %prg;
-  @include auto-line-height($title-font-size-mobile);
   @include letter-spacing(20);
+  font-weight: 700;
   text-transform: uppercase;
-  font-size: $title-font-size-mobile;
   color: $black-decore-color;
   font-family: $caption-font-stack;
   position: relative;
-  padding-left: 38px;
 
   &::before {
     position: absolute;
@@ -18,9 +16,43 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    top: -3px;
-    left: 0px;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  @media screen and (max-width: 689px) {
+    @include auto-line-height($title-font-size-mobile);
+    font-size: $title-font-size-mobile;
+    padding-left: 38px;
+
+    &::before {
+      top: -3px;
+      left: 0px;
+    }
+  }
+
+  @media screen and (min-width: 690px) {
+    @include auto-line-height($title-font-size-tablet);
+    font-size: $title-font-size-tablet;
+
+    &::before {
+      top: 5px;
+    }
+  }
+
+  @media screen and (min-width: 690px) and (max-width: 1299px) {
+    padding-left: 84px;
+
+    &::before {
+      left: 34px;
+    }
+  }
+
+  @media screen and (min-width: 1300px) {
+    padding-left: 50px;
+
+    &::before {
+      left: 0;
+    }
   }
 }
