@@ -54,7 +54,7 @@
     &:hover .direction-list_item-text,
     &:hover .direction-list_item-number,
     &:hover .direction-list_item-years,
-    &:hover .arrow{
+    &:hover .direction-list_item-arrow{
         color: $main-text-color;
         fill: $main-text-color;
     } 
@@ -96,9 +96,9 @@
     margin-top: 20px;
   }
 }
-  .arrow{
+.direction-list_item-arrow{
     fill:  $main-decore-color;
-  }
+}
 .direction-list_item-number{
     @include font-settings(30px, 60px);
     font-family: $caption-font-stack;
@@ -110,6 +110,8 @@
 }
 .direction-list_item-years{
     @include font-settings(13px, 16px);
+    position: relative;
+    top: -26px;
     vertical-align: super;
     font-family: $main-font-stack;
     color: $main-decore-color;

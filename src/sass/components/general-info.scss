@@ -29,7 +29,6 @@
         order: 2;
     }
 }
-
 .info-text_fact::before{
     @include pseudo();
     position: absolute;
@@ -62,8 +61,6 @@
         @include font-settings(20px, 24px);
     }
 }
-  
-
 .info-text_fact{
     margin-bottom: 16px;
 }
@@ -78,11 +75,11 @@
     @media(min-width: 1300px){
         margin-bottom: 114px;
         order: 1;
-}
+    }
 }
 .info-training{
     border-radius: 8px;
-    background-color: #7550de;
+    background-color: $section-bg-decore-color;
     width: 280px;
     height: 230px;
     padding:25px;
@@ -132,5 +129,5 @@
     height: 2px;
     @media(min-width: 768px){
         display: none;
-      }
+    }
 }
