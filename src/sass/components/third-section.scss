@@ -15,10 +15,17 @@
   @extend %list;
   @extend %item;
   counter-reset: title-count;
+  display: flex;
+  flex-wrap: wrap;
 
   @include section-for-phone-only {
     padding-top: 24px;
     padding-bottom: 60px;
+  }
+
+  @include section-for-tablet-only {
+    padding-top: 64px;
+    padding-bottom: 76px;
   }
 }
 
@@ -88,6 +95,11 @@
     font-size: $item-title-fz-mobile;
     @include auto-line-height($item-title-fz-mobile);
     padding-bottom: 18px;
+  }
+
+  @include section-for-tablet-up {
+    font-size: $item-title-fz-tablet;
+    @include auto-line-height($item-title-fz-tablet);
   }
 }
 
