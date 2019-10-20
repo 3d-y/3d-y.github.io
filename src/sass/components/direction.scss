@@ -1,0 +1,119 @@
+.direction{
+        padding-bottom: 52px;
+    @media(min-width: 1300px){
+        padding-bottom: 200px;
+    }
+}
+.direction-goiteens{
+    @include font-settings(20px, 24px);
+    @extend %prg; 
+    font-family: $caption-font-stack;
+    color: $black-decore-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 30px;
+    @media(min-width: 768px){
+        @include font-settings(33px, 78px);
+        margin-bottom: 12px;
+    }
+    @media(min-width: 1300px){
+        margin-bottom: 42px;
+    }
+}
+.direction-list{
+    @extend %list;
+    @media (max-width: 767px){
+        margin-bottom: 43px;
+    }
+    @media(min-width: 768px){
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+.direction-goiteens::before{
+    @include pseudo(inline-block);
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: $main-decore-color;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/common/aim.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.direction-list_item{
+    list-style: none;
+    padding: 30px 62px 22px 45px;
+    border-radius: 7px;
+    background-color: $section-bg-color;
+    width: 280px;
+    height: 225px;
+    &:hover .direction-list_item-text,
+    &:hover .direction-list_item-number,
+    &:hover .direction-list_item-years,
+    &:hover .arrow{
+        color: $main-text-color;
+        fill: $main-text-color;
+    } 
+    &:hover{
+        background-color: $main-decore-color;
+        box-shadow: 1.5px 2.598px 8px 0px rgba(1, 1, 1, 0.1);
+        @media(min-width: 768px){
+            box-shadow: 3px 5.196px 18px 0px rgba(0, 0, 0, 0.1);
+        }
+    }
+    @media(min-width: 768px){
+        width: 300px;
+        height: 295px;
+    }
+    @media(min-width: 1300px){
+        width: 312px;
+        height: 302px;
+    }
+}
+.direction-list_item-title{
+    @include font-settings(24px, 25px);
+    margin: 0;
+    margin-bottom: 28px;
+    font-family: $main-font-stack;
+    color: $black-decore-color;
+    font-weight: bold;
+    @media(min-width: 768px){
+        @include font-settings(30px, 36px);
+    }
+} 
+.direction-list_item-text{
+    @include font-settings(16px, 20px);
+    font-family: $main-font-stack;
+    color:  $section-decore-color;
+}
+.direction-list_item-svg{
+    display: block;
+    @media(min-width: 768px){
+    margin-top: 20px;
+  }
+}
+  .arrow{
+    fill:  $main-decore-color;
+  }
+.direction-list_item-number{
+    @include font-settings(30px, 60px);
+    font-family: $caption-font-stack;
+    color: $main-decore-color;
+    font-weight: bold;
+    @media(min-width: 768px){
+        @include font-settings(40px, 48px);
+    }
+}
+.direction-list_item-years{
+    @include font-settings(13px, 16px);
+    vertical-align: super;
+    font-family: $main-font-stack;
+    color: $main-decore-color;
+    text-decoration: underline;
+}
+
+  

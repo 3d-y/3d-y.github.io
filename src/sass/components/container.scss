@@ -3,6 +3,17 @@
     padding: 0;
     width: 280px;
 }
+.container-section{
+    margin: 0 auto;
+    padding: 0;
+    width: 280px;
+    @media(min-width: 768px){
+        width: 690px;
+    }
+    @media(min-width: 1300px){
+        width: 1300px;
+    }
+}
 
 .footer-container{
     margin: 0 auto;
