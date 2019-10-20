@@ -1,19 +1,19 @@
-.container{
-    margin: 0 auto;
-    padding: 0;
-    width: 280px;
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: 280px;
 }
 
-.footer-container{
-    margin: 0 auto;
-    padding: 0;
-    max-width: 200px;
+.footer-container {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 200px;
 
-    @include for-tablet-portrait-up{
-        max-width: 620px;
-    }
+  @include for-tablet-portrait-up {
+    max-width: 620px;
+  }
 
-    @include for-desktop-up{
-        max-width: 1150px;
-    }
+  @include for-desktop-up {
+    max-width: 1150px;
+  }
 }
