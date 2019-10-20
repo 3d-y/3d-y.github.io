@@ -8,12 +8,33 @@
   }
 
   @include section-for-desctop-up {
+    position: relative;
     padding-top: 108px;
     border-right: 1px dashed $section-bg-border;
     border-left: 1px dashed $section-bg-border;
+    &::before {
+      position: absolute;
+      display: block;
+      content: '';
+      height: 100%;
+      width: 25%;
+      left: 25%;
+      top: 0;
+      border-right: 1px dashed $section-bg-border;
+      border-left: 1px dashed $section-bg-border;
+    }
+    &::after {
+      position: absolute;
+      display: block;
+      content: '';
+      height: 100%;
+      width: 25%;
+      left: 50%;
+      top: 0;
+      border-right: 1px dashed $section-bg-border;
+    }
   }
 }
-
 
 .teaching-info__bg {
   @include section-for-desctop-up {
