@@ -1,0 +1,16 @@
+.navbar {
+  padding-top: 15px;
+  margin-bottom: 275px;
+}
+
+.logo-wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.site-logo {
+  position: relative;
+  @extend %link;
+}

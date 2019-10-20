@@ -1,0 +1,28 @@
+.banner {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.banner__tittle {
+  @extend %prg;
+  margin-bottom: 20px;
+  font-family: $caption-font-stack;
+  font-weight: 700;
+  @include font-settings(35px, 42px);
+  color: $main-text-color;
+}
+
+.banner__darkwrap {
+  min-width: 55px;
+  @include background-opacity(#000, 0.5);
+}
+
+.banner__info {
+  @extend %prg;
+  color: $main-text-color;
+  @include font-settings(16px, 22px);
+}
+
+.banner__info--yellow {
+  color: $main-decore-color;
+}

@@ -1,0 +1,27 @@
+.menu-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 560px;
+  margin: 0 auto;
+  width: 100vw;
+  text-align: center;
+  background-color: $section-bg-decore-color;
+}
+
+.site-navigation {
+  padding-top: 100px;
+  @extend %list;
+  margin-bottom: 35px;
+}
+
+.site-navigation__item {
+  @extend %item;
+}
+
+.site-navigation__link {
+  @extend %link;
+  color: $main-text-color;
+  @include font-settings(25px, 50px);
+  font-weight: 700;
+}
