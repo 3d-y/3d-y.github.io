@@ -20,7 +20,7 @@
     background-position: center;
   }
 
-  @media screen and (max-width: 689px) {
+  @include section-for-phone-only {
     @include auto-line-height($title-font-size-mobile);
     font-size: $title-font-size-mobile;
     padding-left: 38px;
@@ -31,7 +31,7 @@
     }
   }
 
-  @media screen and (min-width: 690px) {
+  @include section-for-tablet-up {
     @include auto-line-height($title-font-size-tablet);
     font-size: $title-font-size-tablet;
 
@@ -40,7 +40,7 @@
     }
   }
 
-  @media screen and (min-width: 690px) and (max-width: 1299px) {
+  @include section-for-tablet-only {
     padding-left: 84px;
 
     &::before {
@@ -48,7 +48,7 @@
     }
   }
 
-  @media screen and (min-width: 1300px) {
+  @include section-for-desctop-up {
     padding-left: 50px;
 
     &::before {

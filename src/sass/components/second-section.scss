@@ -1,27 +1,27 @@
 .teaching-info {
-  @media screen and (max-width: 690px) {
+  @include section-for-phone-only {
     padding-top: 55px;
   }
 
-  @media screen and (min-width: 690px) and (max-width: 1299px) {
+  @include section-for-tablet-only {
     padding-top: 60px;
   }
 
-  @media screen and (min-width: 1300px) {
+  @include section-for-desctop-up {
     padding-top: 108px;
   }
 }
 
 .teaching-info__bg {
-  @media screen and (min-width: 1300px) {
+  @include section-for-desctop-up {
     background-color: $section-bg-color;
-  }
-}
-
-.teaching-info__bg-border {
-  @media screen and (min-width: 1300px) {
-    border-left: 1px dashed $section-bg-border;
-    border-right: 1px dashed $section-bg-border;
+    background-image: url(../images/how_we_teach/teaching-info-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/how_we_teach/teaching-info-bg@2x.png);
+    }
   }
 }
 
@@ -43,23 +43,23 @@
   display: flex;
   flex-wrap: wrap;
 
-  @media screen and (max-width: 690px) {
-    padding: 6px 0 50px 45px;
+  @include section-for-phone-only {
+    padding: 8px 0 50px 45px;
   }
 
-  @media screen and (min-width: 690px) and (max-width: 1299px) {
+  @include section-for-tablet-only {
     padding: 10px 88px 56px 88px;
     justify-content: space-between;
   }
 
-  @media screen and (min-width: 1300px) {
+  @include section-for-desctop-up {
     padding-bottom: 106px;
   }
 }
 
 .teaching-info__item {
   position: relative;
-  
+
   &::before {
     display: block;
     content: '';
@@ -69,7 +69,7 @@
     background-repeat: no-repeat;
   }
 
-  @media screen and (max-width: 690px) {
+  @include section-for-phone-only {
     flex: 0 0 194px;
     padding-top: 94px;
 
@@ -80,7 +80,7 @@
     }
   }
 
-  @media screen and (min-width: 690px) and (max-width: 1299px) {
+  @include section-for-tablet-only {
     flex: 0 0 224px;
     padding-top: 130px;
 
@@ -91,7 +91,7 @@
     }
   }
 
-  @media screen and (min-width: 1300px) {
+  @include section-for-desctop-up {
     flex: 0 0 25%;
     padding: 184px 47px 0 0;
 
@@ -170,17 +170,17 @@
   @extend %prg;
   @include letter-spacing(50);
 
-  @media screen and (max-width: 690px) {
+  @include section-for-phone-only {
     font-size: $primary-item-font-size;
     line-height: $primary-item-line-height;
   }
 
-  @media screen and (min-width: 690px) and (max-width: 1299px) {
+  @include section-for-tablet-only {
     font-size: $secondary-item-font-size;
     line-height: $secondary-item-line-height;
   }
 
-  @media screen and (min-width: 1300px) {
+  @include section-for-desctop-up {
     font-size: $thirdly-item-font-size;
     line-height: $thirdly-item-line-height;
   }
