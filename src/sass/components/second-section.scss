@@ -12,6 +12,7 @@
     padding-top: 108px;
     border-right: 1px dashed $section-bg-border;
     border-left: 1px dashed $section-bg-border;
+
     &::before {
       position: absolute;
       display: block;
@@ -23,6 +24,7 @@
       border-right: 1px dashed $section-bg-border;
       border-left: 1px dashed $section-bg-border;
     }
+    
     &::after {
       position: absolute;
       display: block;
