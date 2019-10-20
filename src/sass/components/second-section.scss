@@ -9,6 +9,7 @@
 
   @include section-for-desctop-up {
     padding-top: 108px;
+    padding-left: 2px;
   }
 }
 
@@ -17,8 +18,7 @@
     background-color: $section-bg-color;
     background-image: url(../images/how_we_teach/teaching-info-bg.png);
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 1914px;
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/how_we_teach/teaching-info-bg@2x.png);
     }
@@ -27,12 +27,22 @@
 
 .teaching-info__title {
   &::before {
-    background-image: url(../images/common/aim.png);
+    background-image: url(../images/common/bricks.png);
+    background-position: 8px 5px;
+
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/common/bricks@2x.png);
+    }
   }
 
-  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  @include section-for-phone-only {
     &::before {
-      background-image: url(../images/common/aim@2x.png);
+      background-image: url(../images/common/aim.png);
+      background-position: center;
+
+      @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/common/aim@2x.png);
+      }
     }
   }
 }
