@@ -9,19 +9,15 @@
 
   @include section-for-desctop-up {
     padding-top: 108px;
-    padding-left: 2px;
+    border-right: 1px dashed $section-bg-border;
+    border-left: 1px dashed $section-bg-border;
   }
 }
+
 
 .teaching-info__bg {
   @include section-for-desctop-up {
     background-color: $section-bg-color;
-    background-image: url(../images/how_we_teach/teaching-info-bg.png);
-    background-position: center;
-    background-size: 1914px;
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/how_we_teach/teaching-info-bg@2x.png);
-    }
   }
 }
 
