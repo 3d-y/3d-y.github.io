@@ -44,7 +44,6 @@
 
 .teaching-struct__item {
   @include letter-spacing(30);
-  @include background-opacity($main-decore-color, 0.2);
   position: relative;
   border-radius: 0 29px;
   counter-increment: title-count;
@@ -59,16 +58,36 @@
     left: 19px;
   }
 
+  &:first-child {
+    background-color: $section-bg-yelow-color;
+
+    &:hover {
+      @include background-opacity($section-bg-yelow-color, 0.7);
+    }
+  }
+
   &:nth-child(2) {
-    @include background-opacity($section-bg-orange-color, 0.2);
+    background-color: $section-bg-orange-color;
+
+    &:hover {
+      @include background-opacity($section-bg-orange-color, 0.7);
+    }
   }
 
   &:nth-child(3) {
-    @include background-opacity($section-bg-decore-color, 0.2);
+    background-color: $section-bg-purple-color;
+
+    &:hover {
+      @include background-opacity($section-bg-purple-color, 0.7);
+    }
   }
 
   &:last-child {
-    @include background-opacity($section-bg-aquamarine-color, 0.2);
+    background-color: $section-bg-aquamarine-color;
+
+    &:hover {
+      @include background-opacity($section-bg-aquamarine-color, 0.7);
+    }
   }
 
   @include section-for-phone-only {
