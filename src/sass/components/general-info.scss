@@ -1,18 +1,18 @@
 .general-info{
     padding-top: 34px;
     padding-bottom: 52px;
-    @media(min-width: 768px){
+    @include section-for-tablet-only{
         padding-top: 40px;
         padding-bottom: 68px;
     }
-    @media(min-width: 1300px){
+    @include section-for-desctop-up{
         padding-top: 116px;
         padding-bottom: 112px;
     }
 }
 .info{
     margin-bottom: 42px;
-    @media(min-width: 1300px){
+    @include section-for-desctop-up{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -21,10 +21,10 @@
 .info-text{
     position: relative;
     padding-top: 22px;
-    @media(min-width: 768px){
+    @include section-for-tablet-only{
         max-width: 560px;
     }
-    @media(min-width: 1300px){
+    @include section-for-desctop-up{
         max-width: 508px;
         order: 2;
     }
@@ -39,12 +39,12 @@
     background-image: url(../images/common/quotes.png);
     background-repeat: no-repeat;
     background-size: contain;
-    @media(min-width: 768px){
+    @include section-for-tablet-only{
         width: 26px;
         height: 22px;
         left: -32px;
     }
-    @media(min-width: 1300px){
+    @include section-for-desctop-up{
         left: -42px;
     }
 }
@@ -54,10 +54,10 @@
     @include font-settings(14px, 18px);
     font-family: $main-font-stack;
     color: $section-decore-color;
-    @media(min-width: 768px){
+    @include section-for-tablet-only{
         @include font-settings(18px, 25px);
     }
-    @media(min-width: 1300px){
+    @include section-for-desctop-up{
         @include font-settings(20px, 24px);
     }
 }
@@ -69,10 +69,10 @@
 }
 .info_img{
     margin-bottom: 46px;
-    @media(min-width: 768px){
+    @include section-for-tablet-only{
         margin-bottom: 70px;
     }
-    @media(min-width: 1300px){
+    @include section-for-desctop-up{
         margin-bottom: 114px;
         order: 1;
     }
@@ -83,7 +83,7 @@
     width: 280px;
     height: 230px;
     padding:25px;
-    @media(min-width: 768px){
+    @include section-for-tablet-only{
         border-radius: 3px;
         background-color: $section-bg-decore-color;
         box-shadow: 3px 5.196px 18px 0px rgba(0, 0, 0, 0.15);
@@ -92,7 +92,7 @@
         display: flex;
         padding:36px 108px 42px 78px;
     }
-    @media(min-width: 1300px){
+    @include section-for-desctop-up{
         border-radius: 4px;
         width: 1298px;
         height: 228px;
@@ -105,7 +105,7 @@
     font-family: $main-font-stack;
     color: $main-text-color;
     text-align: center;
-    @media(min-width: 768px){
+    @include section-for-tablet-only{
         @include font-settings(20px, 28px);
         text-align: left;
         width: 433px;
@@ -113,7 +113,7 @@
         border-left: 2px solid $main-decore-color;
         padding-left: 20px;
       }
-      @media(min-width: 1300px) {
+      @include section-for-desctop-up {
         @include font-settings(25px, 35px);
         text-align: left;
         width: 813px;
@@ -127,7 +127,7 @@
     background-color: $main-decore-color;
     width: 60px;
     height: 2px;
-    @media(min-width: 768px){
+    @include section-for-tablet-only{
         display: none;
     }
 }

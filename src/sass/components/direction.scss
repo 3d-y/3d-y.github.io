@@ -1,6 +1,6 @@
 .direction{
         padding-bottom: 52px;
-    @media(min-width: 1300px){
+     @include section-for-desctop-up{
         padding-bottom: 200px;
     }
 }
@@ -13,20 +13,20 @@
     text-transform: uppercase;
     text-align: left;
     margin-bottom: 30px;
-    @media(min-width: 768px){
+    @include section-for-tablet-only{
         @include font-settings(33px, 78px);
         margin-bottom: 12px;
     }
-    @media(min-width: 1300px){
+    @include section-for-desctop-up{
         margin-bottom: 42px;
     }
 }
 .direction-list{
     @extend %list;
-    @media (max-width: 767px){
+    @include section-for-phone-only {
         margin-bottom: 43px;
     }
-    @media(min-width: 768px){
+    @include section-for-desctop-up{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -61,15 +61,15 @@
     &:hover{
         background-color: $main-decore-color;
         box-shadow: 1.5px 2.598px 8px 0px rgba(1, 1, 1, 0.1);
-        @media(min-width: 768px){
+        @include section-for-tablet-only{
             box-shadow: 3px 5.196px 18px 0px rgba(0, 0, 0, 0.1);
         }
     }
-    @media(min-width: 768px){
+    @include section-for-tablet-only{
         width: 300px;
         height: 295px;
     }
-    @media(min-width: 1300px){
+    @include section-for-desctop-up{
         width: 312px;
         height: 302px;
     }
@@ -81,7 +81,7 @@
     font-family: $main-font-stack;
     color: $black-decore-color;
     font-weight: bold;
-    @media(min-width: 768px){
+    @include section-for-tablet-only{
         @include font-settings(30px, 36px);
     }
 } 
@@ -92,7 +92,7 @@
 }
 .direction-list_item-svg{
     display: block;
-    @media(min-width: 768px){
+    @include section-for-tablet-only{
     margin-top: 20px;
   }
 }
@@ -104,7 +104,7 @@
     font-family: $caption-font-stack;
     color: $main-decore-color;
     font-weight: bold;
-    @media(min-width: 768px){
+    @include section-for-tablet-only{
         @include font-settings(40px, 48px);
     }
 }

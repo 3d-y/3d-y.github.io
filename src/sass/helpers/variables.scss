@@ -1,15 +1,29 @@
 /*Fonst var______________*/
-$main-font-stack: "Ubuntu", "Times New Roman", sans-serif;
-$caption-font-stack: "Open Sans";
+$main-font-stack: 'Ubuntu', 'Times New Roman', sans-serif;
+$caption-font-stack: 'Open Sans', sans-serif;
 
 /* Color stack__________*/
 $main-text-color: #fff;
 $black-decore-color: #222222;
 $section-decore-color: #444444;
 $main-decore-color: #fcae26;
-$main-decore-color-hover:   #26dcfc;
+$footer-text-color: #9699a6;
+$main-decore-color-hover: #26dcfc;
 
 $section-bg-color: #fafafa;
 $section-bg-decore-color: #824fe3;
-$footer-text-color: #9699a6;
-$section-bg-decore-color: #824fe3;
+$section-bg-aquamarine-color: #00ab9f;
+$section-bg-orange-color: #fd6530;
+$section-bg-border: #e3e3e4;
+
+$main-font-size: 18px;
+$title-font-size-mobile: 20px;
+$title-font-size-tablet: 33px;
+
+$primary-item-font-size: 14px;
+$secondary-item-font-size: 16px;
+$thirdly-item-font-size: 18px;
+
+$primary-item-line-height: 20px;
+$secondary-item-line-height: 22px;
+$thirdly-item-line-height: 30px;

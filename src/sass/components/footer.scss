@@ -9,7 +9,7 @@
     &__logo{
         padding-bottom: 20px;
         
-        @include for-tablet-portrait-up{
+        @include section-for-tablet-up{
             min-width: 600px;
             text-align: left;
             padding-bottom: 30px;
@@ -36,7 +36,7 @@
 .address{
     margin-bottom: 30px;
 
-    @include for-tablet-portrait-up{
+    @include section-for-tablet-up{
         margin-bottom: 0;
     }    
 }
@@ -44,7 +44,7 @@
 .contacts-list{
     margin-bottom: 36px;
     
-    @include for-tablet-portrait-up{
+    @include section-for-tablet-up{
         margin-bottom: 0;
     }  
 }
@@ -63,17 +63,17 @@
     margin-bottom: 34px;
     cursor: pointer;
 
-    @include for-tablet-portrait-up{
+    @include section-for-tablet-up{
         margin-bottom: 22px;
     }  
 
-    @include for-desktop-up{
+    @include section-for-desctop-up{
         margin-bottom: 0;
     }
 
     &:hover,
     &:active{
-        @include for-tablet-portrait-up{
+        @include section-for-tablet-up{
             background-color: $main-decore-color-hover;
         }
     }
@@ -114,7 +114,7 @@
         }
     }
 
-    @include for-tablet-portrait-up{
+    @include section-for-tablet-up{
         margin-bottom: 0;
     }
 }
@@ -139,7 +139,7 @@
 // ADAPTATION FOR TABLET
 
 .footer__info{
-    @include for-tablet-portrait-up{
+    @include section-for-tablet-up{
         min-width: 600px;
         display: flex;
         justify-content: space-between;
@@ -147,7 +147,7 @@
     }
 
     &__actions{
-        @include for-tablet-portrait-up{
+        @include section-for-tablet-up{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -157,13 +157,13 @@
 }
 
 .confidence__list{
-    @include for-tablet-portrait-up{
+    @include section-for-tablet-up{
         display: flex;
         align-items: flex-start;
     }
 
     &__item:not(:last-child){
-        @include for-tablet-portrait-up{
+        @include section-for-tablet-up{
             margin-right: 40px;
         }
     }
@@ -172,13 +172,13 @@
 // ADAPTATION FOR DESKTOP
 
 .footer__info{
-    @include for-desktop-up{
+    @include section-for-desctop-up{
         min-width: 1140px;
         padding-bottom: 60px;
     }
 
     &__actions{
-        @include for-desktop-up{
+        @include section-for-desctop-up{
             min-width: 520px;
             flex-direction: row;
             justify-content: space-between;
@@ -188,7 +188,7 @@
 }
 
 .confidence__list__item:not(:last-child){
-    @include for-desktop-up{
+    @include section-for-desctop-up{
         margin-right: 76px;
     }
 }

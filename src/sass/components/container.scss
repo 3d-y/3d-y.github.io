@@ -1,30 +1,30 @@
-.container{
-    margin: 0 auto;
-    padding: 0;
+.container {
+  margin: 0 auto;
+  padding: 0;
+
+  @include section-for-phone-only {
     width: 280px;
-}
-.container-section{
-    margin: 0 auto;
-    padding: 0;
-    width: 280px;
-    @media(min-width: 768px){
-        width: 690px;
-    }
-    @media(min-width: 1300px){
-        width: 1300px;
-    }
+  }
+
+  @include section-for-tablet-only {
+    width: 690px;
+  }
+
+  @include section-for-desctop-up {
+    width: 1300px;
+  }
 }
 
-.footer-container{
-    margin: 0 auto;
-    padding: 0;
-    max-width: 200px;
+.footer-container {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 200px;
 
-    @include for-tablet-portrait-up{
-        max-width: 620px;
-    }
+  @include section-for-tablet-up {
+    max-width: 620px;
+  }
 
-    @include for-desktop-up{
-        max-width: 1150px;
-    }
+  @include section-for-desctop-up {
+    max-width: 1150px;
+  }
 }

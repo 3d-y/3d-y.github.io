@@ -12,6 +12,9 @@ html {
 
 body {
   font-family: $main-font-stack;
+  font-weight: 400;
+  color: $section-decore-color;
+  font-size: $main-font-size;
 }
 
 img {
@@ -21,8 +24,8 @@ img {
 }
 
 .visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
