@@ -20,11 +20,11 @@
   padding: 0;
   max-width: 200px;
 
-  @include for-tablet-portrait-up {
+  @include section-for-tablet-up {
     max-width: 620px;
   }
 
-  @include for-desktop-up {
+  @include section-for-desctop-up {
     max-width: 1150px;
   }
 }
