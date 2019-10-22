@@ -28,7 +28,6 @@
   @include section-for-tablet-up {
     &::before {
       background-image: url(../images/common/aim.png);
-      background-position: center;
 
       @media screen and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
         background-image: url(../images/common/aim@2x.png);
@@ -65,6 +64,10 @@
   &:focus .direction-list_item-years {
     color: $main-text-color;
     border-color: $main-text-color;
+  }
+  &:hover .direction-list_item-arrow,
+  &:focus .direction-list_item-arrow {
+    fill: $main-text-color;
   }
 
   &:hover {
@@ -132,14 +135,8 @@
   }
 }
 
-.direction-list_item-svg {
-  display: block;
-  @include section-for-tablet-only {
-    margin-top: 20px;
-  }
-}
-
 .direction-list_item-arrow {
+  position: relative;
   display: block;
   width: 19px;
   height: 13px;
