@@ -21,6 +21,12 @@
   letter-spacing: ($interval / 1000) + em;
 }
 
+@mixin header-for-desktop-up {
+  @media (min-width: 960px) {
+    @content;
+  }
+}
+
 @mixin for-phone-only {
   @media (max-width: 599px) {
     @content;

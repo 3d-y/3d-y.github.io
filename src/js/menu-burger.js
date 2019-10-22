@@ -1,9 +1,11 @@
-menuBurger.onclick = function myFunction(argument) {
-	var x =document.getElementById('siteNav');
-
-	if (x.className === "list site-navigation") {
-		x.className += " mobille-menu";
-	} else {
-		x.className = "list site-navigation"
-	}
-}
+$(function(){
+	$("#menuBurger").click(function(){
+	  if ($("#siteNav").hasClass("menu-wrap--mobile")){
+		$("#siteNav").removeClass("menu-wrap--mobile");
+		$("#menuBurger").removeClass("menu-burger--close");
+	  } else {
+		$("#siteNav").addClass("menu-wrap--mobile");
+		$("#menuBurger").addClass("menu-burger--close");
+	  }
+	});
+  });
