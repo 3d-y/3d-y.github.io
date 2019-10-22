@@ -5,16 +5,16 @@
 }
 
 .teaching-struct__title {
-  &::before {
-    background-image: url(../images/common/diagram.png);
-    background-position: center;
-  }
-
-  @include section-for-phone-only {
+  @include section-for-tablet-up {
     &::before {
-      background-image: url(../images/common/aim.png);
+      background-image: url(../images/common/diagram.png);
+      background-position: center;
+
+      @media screen and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
+        background-image: url(../images/common/diagram@2x.png);
+      }
     }
-  }
+  }  
 }
 
 .teaching-struct__list {

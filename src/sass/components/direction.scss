@@ -25,9 +25,15 @@
     padding-bottom: 60px;
   }
 
-  &:before {
-    background-image: url(../images/common/aim.png);
-    background-position: center;
+  @include section-for-tablet-up {
+    &::before {
+      background-image: url(../images/common/aim.png);
+      background-position: center;
+
+      @media screen and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
+        background-image: url(../images/common/aim@2x.png);
+      }
+    }
   }
 }
 
@@ -51,11 +57,6 @@
     padding: 50px 30px 30px 55px;
   }
 
-  &:hover .direction-list_item-arrow,
-  &:focus .direction-list_item-arrow {
-    background-image: url(../../images/common/arrow-hover.svg);
-  }
-
   &:hover .direction-list_item-text,
   &:hover .direction-list_item-number,
   &:hover .direction-list_item-years,
@@ -63,7 +64,6 @@
   &:focus .direction-list_item-number,
   &:focus .direction-list_item-years {
     color: $main-text-color;
-    fill: $main-text-color;
     border-color: $main-text-color;
   }
 
@@ -144,10 +144,7 @@
   width: 19px;
   height: 13px;
   fill: $main-decore-color;
-  transition: backgeound 200ms linear;
-  background-image: url(../images/common/arrow.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  transition: fill 200ms linear;
 }
 
 .direction-list_item-number {
