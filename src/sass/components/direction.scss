@@ -79,11 +79,12 @@
   }
 
   &:hover .direction-list_item-arrow::before,
-  &:focus .direction-list_item-line::before {
+  &:focus .direction-list_item-arrow::before {
     background-color: $main-text-color;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $main-decore-color;
     box-shadow: 1.5px 2.598px 8px 0px rgba(1, 1, 1, 0.1);
     @include section-for-tablet-only {

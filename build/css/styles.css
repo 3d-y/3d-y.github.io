@@ -823,11 +823,12 @@ input[type='radio'].visually-hidden {
 }
 
 .direction-list_item-link:hover .direction-list_item-arrow::before,
-.direction-list_item-link:focus .direction-list_item-line::before {
+.direction-list_item-link:focus .direction-list_item-arrow::before {
   background-color: #fff;
 }
 
-.direction-list_item-link:hover {
+.direction-list_item-link:hover,
+.direction-list_item-link:focus {
   background-color: #fcae26;
   box-shadow: 1.5px 2.598px 8px 0px rgba(1, 1, 1, 0.1);
 }
@@ -957,7 +958,7 @@ input[type='radio'].visually-hidden {
 
 .teaching-info__item:last-child::before {
   background-color: #faebd0;
-  background-image: url(../../images/how_we_teach/arrow-aim.png);
+  background-image: url(../images/how_we_teach/arrow-aim.png);
 }
 
 .teaching-info__item-descr {
@@ -1456,7 +1457,8 @@ input[type='radio'].visually-hidden {
     padding-bottom: 60px;
   }
 
-  .direction-list_item-link:hover {
+  .direction-list_item-link:hover,
+  .direction-list_item-link:focus {
     transform: scale(1.05);
     z-index: 1;
     position: relative;
@@ -1751,7 +1753,8 @@ input[type='radio'].visually-hidden {
     padding-bottom: 30px;
   }
 
-  .direction-list_item-link:hover {
+  .direction-list_item-link:hover,
+  .direction-list_item-link:focus {
     box-shadow: 3px 5.196px 18px 0px rgba(0, 0, 0, 0.1);
   }
 
