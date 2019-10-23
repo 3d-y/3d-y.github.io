@@ -1,134 +1,232 @@
-.direction{
-        padding-bottom: 52px;
-     @include section-for-desctop-up{
-        padding-bottom: 200px;
-    }
-}
-.direction-goiteens{
-    @include font-settings(20px, 24px);
-    @extend %prg; 
-    font-family: $caption-font-stack;
-    color: $black-decore-color;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: left;
-    margin-bottom: 30px;
-    @include section-for-tablet-up{
-        @include font-settings(33px, 78px);
-        margin-bottom: 12px;
-    }
-    @include section-for-desctop-up{
-        margin-bottom: 42px;
-    }
-}
-.direction-list{
-    @extend %list;
-    @include section-for-tablet-up{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    @include section-for-desctop-up{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-}
-.direction-goiteens::before{
-    @include pseudo(inline-block);
-    margin-right: 10px;
-    border-radius: 50%;
-    background-color: $main-decore-color;
-    width: 30px;
-    height: 30px;
-    background-image: url(../images/common/aim.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 60%;
-    @media(-webkit-min-device-pixel-ratio:2), (min-resolution:192px){
-        background-image: url(../images/common/aim@2x.png);
-    }
-}
-.direction-list_item{
-    list-style: none;
-    padding: 26px 62px 22px 45px;
-    border-radius: 7px;
+.direction-list {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include section-for-tablet-only {
+    margin: 0 auto;
+    width: 620px;
     background-color: $section-bg-color;
-    width: 280px;
-    height: 225px;
-    cursor: pointer;
-    &:hover .direction-list_item-text,
-    &:hover .direction-list_item-number,
-    &:hover .direction-list_item-years{
-        color: $main-text-color;
-    } 
-    &:hover .direction-list_item-arrow{
-        fill: $main-text-color;
-    }
-    &:hover{
-        background-color: $main-decore-color;
-        box-shadow: 1.5px 2.598px 8px 0px rgba(1, 1, 1, 0.1);
-        @include section-for-tablet-up{
-            box-shadow: 3px 5.196px 18px 0px rgba(0, 0, 0, 0.1);
-        }
-    }
-    @include section-for-phone-only{
-        margin-bottom: 16px;
-    }
-    @include section-for-tablet-up{
-        width: 310px;
-        height: 295px;
-    }
-    @include section-for-desctop-up{
-        width: 325px;
-        height: 305px;
-    }
-}
-.direction-list_item:last-child{
-    @include section-for-phone-only{
-        margin-bottom: 0px;
-    }
-}
-.direction-list_item-title{
-    @include font-settings(25px, 25px);
-    margin: 0;
-    padding-bottom: 26px;
-    font-family: $main-font-stack;
-    color: $black-decore-color;
-    font-weight: bold;
-    @include section-for-tablet-up{
-        @include font-settings(30px, 36px);
-    }
-} 
-.direction-list_item-text{
-    @extend %prg; 
-    margin-bottom: 20px;
-    @include font-settings(16px, 20px);
-    font-family: $main-font-stack;
-    color:  $section-decore-color;
+  }
+
+  @include section-for-desctop-up {
+    justify-content: space-between;
+    padding-bottom: 110px;
+  }
 }
 
-.direction-list_item-arrow{
-    fill:  $main-decore-color;
-    @include section-for-tablet-up{
-    margin-top: 10px;
+.direction-goiteens {
+  padding-bottom: 34px;
+
+  @include section-for-tablet-only {
+    padding-bottom: 30px;
+  }
+
+  @include section-for-desctop-up {
+    padding-bottom: 60px;
+  }
+
+  @include section-for-tablet-up {
+    &::before {
+      background-image: url(../images/common/aim.png);
+
+      @media screen and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
+        background-image: url(../images/common/aim@2x.png);
+      }
     }
+  }
 }
-.direction-list_item-number{
-    @include font-settings(30px, 60px);
-    font-family: $caption-font-stack;
-    color: $main-decore-color;
-    font-weight: bold;
-    @include section-for-tablet-up{
-        @include font-settings(40px, 48px);
+
+.direction-list_item-link {
+  text-decoration: none;
+  display: block;
+  transition: background-color 200ms linear, box-shadow 200ms linear;
+  box-shadow: none;
+
+  @include section-for-phone-only {
+    width: 100%;
+    min-height: 225px;
+    padding: 23px 18px 22px 45px;
+    border-radius: 7px;
+  }
+
+  @include section-for-tablet-up {
+    width: 100%;
+    border-radius: 5px;
+    min-height: 295px;
+    padding: 50px 30px 30px 55px;
+  }
+
+  &:hover .direction-list_item-text,
+  &:hover .direction-list_item-number,
+  &:hover .direction-list_item-years,
+  &:focus .direction-list_item-text,
+  &:focus .direction-list_item-number,
+  &:focus .direction-list_item-years {
+    color: $main-text-color;
+    border-color: $main-text-color;
+  }
+
+  &:hover .direction-list_item-tip,
+  &:focus .direction-list_item-tip {
+    left: 18px;
+    fill: $main-text-color;
+  }
+
+  &:hover .direction-list_item-line,
+  &:focus .direction-list_item-line {
+    fill: $main-text-color;
+  }
+
+  &:hover .direction-list_item-arrow::before,
+  &:focus .direction-list_item-line::before {
+    background-color: $main-text-color;
+  }
+
+  &:hover {
+    background-color: $main-decore-color;
+    box-shadow: 1.5px 2.598px 8px 0px rgba(1, 1, 1, 0.1);
+    @include section-for-tablet-only {
+      box-shadow: 3px 5.196px 18px 0px rgba(0, 0, 0, 0.1);
     }
+
+    @include section-for-desctop-up {
+      transform: scale(1.05);
+      z-index: 1;
+      position: relative;
+    }
+  }
 }
-.direction-list_item-years{
-    @include font-settings(13px, 16px);
-    position: relative;
-    top: -26px;
-    vertical-align: super;
-    font-family: $main-font-stack;
-    color: $main-decore-color;
-    text-decoration: underline;
+
+.direction-list_item {
+  list-style: none;
+  background-color: $section-bg-color;
+  position: relative;
+
+  @include section-for-phone-only {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+      flex: 0 0 100%;
+    }
+  }
+
+  @include section-for-tablet-only {
+    flex: 0 0 50%;
+
+    &:first-child {
+      border-right: 1px dashed $section-bg-border;
+      border-bottom: 1px dashed $section-bg-border;
+    }
+
+    &:last-child {
+      border-left: 1px dashed $section-bg-border;
+      border-top: 1px dashed $section-bg-border;
+    }
+  }
+
+  @include section-for-desctop-up {
+    flex: 0 0 25%;
+
+    &:not(:last-child) {
+      border-right: 1px dashed $section-bg-border;
+    }
+  }
+}
+
+.direction-list_item-title {
+  @include font-settings($item-title-fz-mobile, $item-title-fz-mobile);
+  @include letter-spacing(30);
+  @extend %prg;
+  padding-bottom: 23px;
+  font-family: $main-font-stack;
+  color: $black-decore-color;
+  font-weight: bold;
+
+  @include section-for-tablet-up {
+    @include font-settings(30px, 36px);
+    padding-bottom: 18px;
+  }
+}
+
+.direction-list_item-text {
+  @include font-settings($secondary-item-font-size, $primary-item-line-height);
+  @include letter-spacing(45);
+  padding-bottom: 30px;
+  @extend %prg;
+  font-family: $main-font-stack;
+  color: $section-decore-color;
+  transition: color 200ms linear;
+
+  @include section-for-tablet-only {
+    line-height: $secondary-item-line-height;
+    padding-bottom: 25px;
+  }
+
+  @include section-for-desctop-up {
+    line-height: 27px;
+    font-size: $thirdly-item-font-size;
+    padding-bottom: 16px;
+  }
+}
+
+.direction-list_item-arrow {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 1px;
+    width: 35px;
+  }
+}
+
+.direction-list_item-tip {
+  top: -6px;
+  position: absolute;
+  width: 19px;
+  height: 13px;
+  fill: $main-decore-color;
+  transition: fill 200ms linear, left 200ms linear;
+}
+
+.direction-list_item-number {
+  position: relative;
+  display: inline-block;
+  @include auto-line-height(30px);
+  font-size: $thirdly-item-line-height;
+  font-family: $caption-font-stack;
+  color: $main-decore-color;
+  font-weight: bold;
+  transition: color 200ms linear;
+
+  @include section-for-phone-only {
+    padding-bottom: 12px;
+  }
+
+  @include section-for-tablet-up {
+    @include font-settings(40px, 48px);
+    padding-bottom: 10px;
+  }
+}
+
+.direction-list_item-years {
+  display: inline-block;
+  font-weight: 400;
+  @include font-settings($sup-font-size, 14px);
+  @include letter-spacing(15);
+  transition: color 200ms linear;
+  position: absolute;
+  vertical-align: super;
+  font-family: $main-font-stack;
+  color: $main-decore-color;
+  border-bottom: 1px solid $main-decore-color;
+  transition: border-color 200ms linear, color 200ms linear;
+  top: -14px;
+
+  @include section-for-tablet-up {
+    line-height: $secondary-item-line-height;
+    right: -40px;
+    top: -5px;
+  }
 }

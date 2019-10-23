@@ -16,7 +16,16 @@
     position: absolute;
     width: 30px;
     height: 30px;
+    background-size: cover;
     background-repeat: no-repeat;
+
+    @include section-for-phone-only {
+      background-image: url(../images/common/aim.png);
+
+      @media screen and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
+        background-image: url(../images/common/aim@2x.png);
+      }
+    }
   }
 
   @include section-for-phone-only {
