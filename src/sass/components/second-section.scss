@@ -12,6 +12,7 @@
     padding-top: 108px;
     border-right: 1px dashed $section-bg-border;
     border-left: 1px dashed $section-bg-border;
+
     &::before {
       position: absolute;
       display: block;
@@ -23,6 +24,7 @@
       border-right: 1px dashed $section-bg-border;
       border-left: 1px dashed $section-bg-border;
     }
+
     &::after {
       position: absolute;
       display: block;
@@ -46,20 +48,12 @@
   &::before {
     background-image: url(../images/common/bricks.png);
     background-position: 8px 5px;
-
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/common/bricks@2x.png);
-    }
   }
 
   @include section-for-phone-only {
     &::before {
       background-image: url(../images/common/aim.png);
       background-position: center;
-
-      @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(../images/common/aim@2x.png);
-      }
     }
   }
 }
@@ -130,66 +124,38 @@
   }
 
   &:first-child::before {
-    @include background-opacity($main-decore-color, 0.2);
+    background-color: $section-bg-yelow-color;
     background-image: url(../images/how_we_teach/globe.png);
-
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/how_we_teach/globe@2x.png);
-    }
   }
 
   &:nth-child(2)::before {
-    @include background-opacity($section-bg-orange-color, 0.2);
+    background-color: $section-bg-orange-color;
     background-image: url(../images/how_we_teach/hands.png);
-
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/how_we_teach/hands@2x.png);
-    }
   }
 
   &:nth-child(3)::before {
-    @include background-opacity($section-bg-decore-color, 0.2);
+    background-color: $section-bg-purple-color;
     background-image: url(../images/how_we_teach/peace.png);
-
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/how_we_teach/peace@2x.png);
-    }
   }
 
   &:nth-child(4)::before {
-    @include background-opacity($section-bg-aquamarine-color, 0.2);
+    background-color: $section-bg-aquamarine-color;
     background-image: url(../images/how_we_teach/coins.png);
-
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/how_we_teach/coins@2x.png);
-    }
   }
 
   &:nth-last-child(3)::before {
-    @include background-opacity($section-bg-decore-color, 0.2);
+    background-color: $section-bg-purple-color;
     background-image: url(../images/how_we_teach/lamp.png);
-
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/how_we_teach/lamp@2x.png);
-    }
   }
 
   &:nth-last-child(2)::before {
-    @include background-opacity($section-bg-orange-color, 0.2);
+    background-color: $section-bg-orange-color;
     background-image: url(../images/how_we_teach/folder.png);
-
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/how_we_teach/folder@2x.png);
-    }
   }
 
   &:last-child::before {
-    @include background-opacity($main-decore-color, 0.2);
+    background-color: $section-bg-yelow-color;
     background-image: url(../../images/how_we_teach/arrow-aim.png);
-
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/how_we_teach/folder@2x.png);
-    }
   }
 }
 
