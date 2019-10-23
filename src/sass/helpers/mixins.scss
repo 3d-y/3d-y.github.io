@@ -3,7 +3,7 @@
   line-height: $height;
 }
 
-@mixin pseudo($display: block, $content: '') {
+@mixin pseudo($display: block, $content: "") {
   display: $display;
   content: $content;
 }
@@ -21,49 +21,24 @@
   letter-spacing: ($interval / 1000) + em;
 }
 
-@mixin header-for-desktop-up {
-  @media (min-width: 960px) {
-    @content;
-  }
-}
-
-@mixin for-phone-only {
-  @media (max-width: 599px) {
-    @content;
-  }
-}
-
-@mixin for-tablet-portrait-up {
-  @media (min-width: 600px) {
-    @content;
-  }
-}
-
-@mixin for-desktop-up {
-  @media (min-width: 1200px) {
-    @content;
-  }
-}
-
-// MAX 689
 @mixin section-for-phone-only {
   @media screen and (max-width: 729px) {
     @content;
   }
 }
-// MIN 690
+
 @mixin section-for-tablet-up {
   @media screen and (min-width: 730px) {
     @content;
   }
 }
-// MIN 690 MAX 1299
+
 @mixin section-for-tablet-only {
   @media screen and (min-width: 730px) and (max-width: 1339px) {
     @content;
   }
 }
-// MIN 1300
+
 @mixin section-for-desctop-up {
   @media screen and (min-width: 1340px) {
     @content;
