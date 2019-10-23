@@ -3,7 +3,7 @@
 <p>Collaborators</p>
 <ul>
   <li><a href="https://github.com/yamyn">Yaroslav Mynchencko</a></li>
-  <li><a href="https://github.com/Scaring"></a>Dmytro Kuschevyy</li>
-  <li><a href="https://github.com/dchuchukalo"></a>Dmytro Chuchukalo</li>
+  <li><a href="https://github.com/Scaring">Dmytro Kuschevyy</a></li>
+  <li><a href="https://github.com/dchuchukalo">Dmytro Chuchukalo</a></li>
   <li><a href="https://github.com/lukashyna">Anastasia Lukashina</a></li>
 </ul>

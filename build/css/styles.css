@@ -684,7 +684,7 @@ input[type='radio'].visually-hidden {
 }
 
 .site-navigation__link:hover::after,
-.site-navigation__linkfocus::after {
+.site-navigation__link:focus::after {
   display: block;
   content: "";
   position: absolute;
