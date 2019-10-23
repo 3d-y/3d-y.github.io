@@ -551,7 +551,7 @@ input[type='radio'].visually-hidden {
 
 .top {
   position: relative;
-  background-image: url(../../../images/common/img.jpg);
+  background-image: url(../images/common/img.jpg);
   height: 560px;
   background-size: cover;
   background-position: center;
@@ -590,7 +590,7 @@ input[type='radio'].visually-hidden {
   position: relative;
   width: 100px;
   height: 26px;
-  background-image: url(../../../images/common/logo.png);
+  background-image: url(../images/common/logo.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -599,17 +599,17 @@ input[type='radio'].visually-hidden {
   width: 28px;
   height: 19px;
   cursor: pointer;
-  background-image: url(../../../images/common/buger.png);
+  background-image: url(../images/common/buger.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .menu-burger--black {
-  background-image: url(../../../images/common/buger_black.png);
+  background-image: url(../images/common/buger_black.png);
 }
 
 .menu-burger--close {
-  background-image: url(../../../images/common/close.png);
+  background-image: url(../images/common/close.png);
 }
 
 .banner {
@@ -1332,7 +1332,7 @@ input[type='radio'].visually-hidden {
   .site-logo {
     width: 143px;
     height: 37px;
-    background-image: url(../../../images/common/logo_desktop.png);
+    background-image: url(../images/common/logo_desktop.png);
   }
 
   #menuBurger {
