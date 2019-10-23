@@ -1,6 +1,6 @@
 .menu-wrap {
   display: none;
-  @include for-desktop-up {
+  @include section-for-desctop-up {
     display: flex;
     align-items: center;
   }
@@ -22,7 +22,7 @@
   padding-top: 100px;
   @extend %list;
   margin-bottom: 35px;
-  @include for-desktop-up {
+  @include section-for-desctop-up {
     display: flex;
     justify-content: space-between;
     margin-right: 55px;
@@ -40,7 +40,7 @@
   position: relative;
   @extend %link;
   color: $main-text-color;
-  @include font-settings(25px, 50px);
+  @include font-settings($item-title-fz-mobile, 50px);
   font-weight: 700;
 
   &:hover,
@@ -54,13 +54,13 @@
     }
   }
 
-  @include for-desktop-up {
-    @include font-settings(18px, 22px);
+  @include section-for-desctop-up {
+    @include font-settings($main-font-size, $secondary-item-line-height);
   }
 }
 
 .page-header--fixed .site-navigation__link {
-  @include for-desktop-up {
+  @include section-for-desctop-up {
     color: $black-decore-color;
   }
 }

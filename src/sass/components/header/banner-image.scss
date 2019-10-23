@@ -4,7 +4,7 @@
   height: 560px;
   background-size: cover;
   background-position: center;
-  @include for-desktop-up {
+  @include section-for-desctop-up {
     height: 970px;
   }
 }

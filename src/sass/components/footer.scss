@@ -121,7 +121,6 @@
 
 .confidence{
     background-color: #151515;
-
     &__list{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -132,6 +131,18 @@
             font-family: "Open Sans";
             font-style: normal;
             font-weight: 700;
+            
+            & a{
+                @extend %link;
+                // text-decoration: none;
+                color:  $footer-text-color;
+
+                &:hover{
+                    color: $main-decore-color;
+                }
+            }
+
+
         }
     }
 }

@@ -5,7 +5,7 @@
   @include section-for-tablet-up {
     margin-bottom: 30px;
   }
-  @include for-desktop-up {
+  @include section-for-desctop-up {
     padding-top: 650px;
     text-align: left;
   }
@@ -21,7 +21,7 @@
   @include section-for-tablet-up {
     @include font-settings(45px, 54px);
   }
-  @include for-desktop-up {
+  @include section-for-desctop-up {
     @include font-settings(65px, 60px);
   }
 }
@@ -34,7 +34,7 @@
     width: 445px;
     margin: 0 auto;
   }
-  @include for-desktop-up {
+  @include section-for-desctop-up {
     padding: 18px 0 18px 65px;
     width: 490px;
     margin: 0;
