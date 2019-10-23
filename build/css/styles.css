@@ -957,7 +957,7 @@ input[type='radio'].visually-hidden {
 
 .teaching-info__item:last-child::before {
   background-color: #faebd0;
-  background-image: url(../../images/how_we_teach/arrow-aim.png);
+  background-image: url(../images/how_we_teach/arrow-aim.png);
 }
 
 .teaching-info__item-descr {
@@ -1253,7 +1253,8 @@ input[type='radio'].visually-hidden {
   }
 
   .request-btn:hover,
-  .request-btn:active {
+  .request-btn:active,
+  .request-btn:focus {
     background-color: #26dcfc;
   }
 
