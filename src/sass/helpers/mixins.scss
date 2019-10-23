@@ -3,7 +3,7 @@
   line-height: $height;
 }
 
-@mixin pseudo($display: block, $content: '') {
+@mixin pseudo($display: block, $content: "") {
   display: $display;
   content: $content;
 }
