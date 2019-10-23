@@ -25,6 +25,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 115px;
   }
 }
 
@@ -106,7 +107,7 @@
     margin-bottom: 70px;
   }
   @include section-for-desctop-up {
-    margin-bottom: 114px;
+    margin-bottom: 0;
     order: 1;
   }
 }

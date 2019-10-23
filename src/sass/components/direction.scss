@@ -67,8 +67,8 @@
     border-color: $main-text-color;
   }
 
-  &:hover .direction-list_item-arrow,
-  &:focus .direction-list_item-arrow {
+  &:hover .direction-list_item-tip,
+  &:focus .direction-list_item-tip {
     left: 18px;
     fill: $main-text-color;
   }
@@ -76,6 +76,11 @@
   &:hover .direction-list_item-line,
   &:focus .direction-list_item-line {
     fill: $main-text-color;
+  }
+
+  &:hover .direction-list_item-arrow::before,
+  &:focus .direction-list_item-line::before {
+    background-color: $main-text-color;
   }
 
   &:hover {
@@ -166,20 +171,23 @@
 
 .direction-list_item-arrow {
   position: relative;
-  display: block;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 1px;
+    width: 35px;
+  }
+}
+
+.direction-list_item-tip {
+  top: -6px;
+  position: absolute;
   width: 19px;
   height: 13px;
   fill: $main-decore-color;
   transition: fill 200ms linear, left 200ms linear;
-}
-
-.direction-list_item-line {
-  position: absolute;
-  width: 18px;
-  height: 1px;
-  bottom: 60px;
-  fill: $main-decore-color;
-  transition: 200ms linear;
 }
 
 .direction-list_item-number {
