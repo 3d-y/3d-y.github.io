@@ -1254,7 +1254,8 @@ input[type='radio'].visually-hidden {
   }
 
   .request-btn:hover,
-  .request-btn:active {
+  .request-btn:active,
+  .request-btn:focus {
     background-color: #26dcfc;
   }
 
