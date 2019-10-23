@@ -185,7 +185,7 @@
 
   &:last-child::before {
     background-color: $section-bg-yelow-color;
-    background-image: url(../../images/how_we_teach/arrow-aim.png);
+    background-image: url(../images/how_we_teach/arrow-aim.png);
 
     // for retina display
     @media screen and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
