@@ -1,0 +1,61 @@
+.arrow {
+  $size: 10px;
+  $width: 1px;
+  display: block;
+  width: $size / 1.4;
+  height: $size / 1.4 * 2;
+  position: relative;
+  transform: translateX(20px);
+
+  & span,
+  &:before,
+  &:after {
+    background: #e9a328;
+    content: '';
+    display: block;
+    width: $size;
+    height: $width;
+    position: absolute;
+    top: 24px;
+  }
+
+  &:before {
+    transform: rotate(-45deg);
+  }
+  &:after {
+    transform: rotate(45deg);
+  }
+
+  & span {
+    width: 20px;
+  }
+}
+
+.direction-list_item:hover .arrow--right {
+  & span {
+    width: $size * 3.4;
+  }
+
+  & span,
+  &:before,
+  &:after {
+    right: 0;
+    transform-origin: right 50%;
+  }
+
+  &:before,
+  &:after {
+    transition: right 0.2s 0.2s;
+  }
+
+  & span {
+    transition: $width 0.4s, right 0.2s 0.2s;
+  }
+
+  & span,
+  &:before,
+  &:after {
+    right: $size / 1.4 * -2;
+    background: #fff;
+  }
+}
