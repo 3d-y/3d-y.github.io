@@ -1,25 +1,26 @@
 /*
    Import partials below
 */
-@import "./helpers/variables.scss";
-@import "./helpers/placeholders.scss";
-@import "./helpers/mixins.scss";
-@import "./normalize";
-@import "./fonts.scss";
-@import "./base.scss";
+@import './helpers/variables.scss';
+@import './helpers/placeholders.scss';
+@import './helpers/mixins.scss';
+@import './normalize';
+@import './fonts.scss';
+@import './base.scss';
+@import './components/common/arrow-styles.scss';
 
 /*components*/
-@import "./components/container.scss";
+@import './components/container.scss';
 
-@import "./components/header/banner-image.scss";
-@import "./components/header/page-header.scss";
-@import "./components/header/banner-info.scss";
-@import "./components/header/down-scroll.scss";
-@import "./components/header/site-nav.scss";
+@import './components/header/banner-image.scss';
+@import './components/header/page-header.scss';
+@import './components/header/banner-info.scss';
+@import './components/header/down-scroll.scss';
+@import './components/header/site-nav.scss';
 
-@import "./components/common/section";
-@import "./components/general-info.scss";
-@import "./components/direction.scss";
-@import "./components/second-section";
-@import "./components/third-section";
-@import "./components/footer.scss";
+@import './components/common/section';
+@import './components/general-info.scss';
+@import './components/direction.scss';
+@import './components/second-section';
+@import './components/third-section';
+@import './components/footer.scss';
