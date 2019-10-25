@@ -7,7 +7,7 @@ $width: 1px;
   width: $size / 1.414;
   height: $size / 1.414 * 2;
   position: relative;
-  transform: translateX(14px);
+  transform: translate(14px, 6px);
 
   & span,
   &:before,
@@ -53,14 +53,10 @@ $width: 1px;
     transition: right 0.4s 0.04s;
   }
 
-  //   & span {
-
-  //   }
-
   & span,
   &:before,
   &:after {
-    right: $size / 1.4 * -2;
+    right: $size / 1.4 * -2.5;
     background: #fff;
   }
 }
